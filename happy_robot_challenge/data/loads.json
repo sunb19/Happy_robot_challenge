@@ -1,0 +1,32 @@
+[
+  {
+    "load_id": "L-CHI-DET-001",
+    "origin": "Chicago, Illinois",
+    "destination": "Detroit, Michigan",
+    "pickup_datetime": "2025-11-18T09:00:00",
+    "delivery_datetime": "2025-11-18T14:00:00",
+    "equipment_type": "Dry Van",
+    "loadboard_rate": 850,
+    "notes": "Drop and hook",
+    "weight": 24000,
+    "commodity_type": "Consumer goods",
+    "num_of_pieces": 22,
+    "miles": 281,
+    "dimensions": "48x40 pallets"
+  },
+  {
+    "load_id": "L-DFW-ATL-002",
+    "origin": "Dallas, Texas",
+    "destination": "Atlanta, Georgia",
+    "pickup_datetime": "2025-11-19T08:00:00",
+    "delivery_datetime": "2025-11-20T10:00:00",
+    "equipment_type": "Reefer",
+    "loadboard_rate": 2200,
+    "notes": "Reefer set to 34F",
+    "weight": 42000,
+    "commodity_type": "Frozen food",
+    "num_of_pieces": 30,
+    "miles": 781,
+    "dimensions": "53' trailer"
+  }
+]
