@@ -114,3 +114,62 @@ GET /dashboard
 
 Returns aggregated metrics.
 
+# ☁️ Deployment (Fly.io)
+ Deploy 
+
+ ```bash 
+ fly deploy
+ ```
+
+Set secrets( API key)
+
+```bash
+fly secrets set API_KEY=dev-api-key
+```
+
+start machine
+
+```bash
+fly machine start <machine-id>
+```
+
+# 🧪 Testing
+
+Use curl:
+
+```bash
+curl -X POST "https://happy-robot-challenge.fly.dev/auth-carrier" \
+  -H "X-API-Key: dev-api-key" \
+  -H "Content-Type: application/json" \
+  -d '{"mc_number":"12345"}'
+```
+
+Note: test case will need to be added(unit tests, integration test)
+
+## 📞 HappyRobot Integration
+
+In your inbound agent:
+
+# Tool 1 — Carrier Verification
+ 
+```bash
+POST https://happy-robot-challenge.fly.dev/auth-carrier
+```
+
+# Tool 2 — Load Search
+ 
+```bash
+POST https://happy-robot-challenge.fly.dev/loads/search
+```
+
+# Tool 3 - Negotiation
+ 
+```bash
+POST https://happy-robot-challenge.fly.dev/negotiate
+```
+
+# Tool 4 - Log Call
+ 
+```bash
+POST https://happy-robot-challenge.fly.dev/call-log
+```
